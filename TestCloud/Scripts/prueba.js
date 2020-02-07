@@ -1,6 +1,5 @@
 $(document).ready(() =>
 {
-    //$(".body-content").css('padding-top', $('.header').outerHeight()); // pone el contenido por debajo del header
     setSubmit(); // setea el submit
     $(".owl-carousel.carousel-portfolio").owlCarousel( // instancia el carousel
         {
@@ -13,39 +12,22 @@ $(document).ready(() =>
             responsive: {
                 320: {
                     items: 1,
-                    nav: true,
+                    nav: false,
                     loop: true,
                     center: true,
                     stagePadding: 50
                 },
                 600: {
                     items: 2,
-                    nav: true,
+                    nav: false,
                     loop: true
                 },               
                 800: {
                     items: 4,
-                    nav: true,
+                    nav: false,
                     loop: true
                 }
             }
-        });
-
-    $(".owl-carousel.carousel-intro-left").owlCarousel( // instancia el carousel
-        {
-            items: 1,
-            loop: false,
-            nav: false,
-            autoplay: false,
-            center: false
-        });
-    $(".owl-carousel.carousel-intro-right").owlCarousel( // instancia el carousel
-        {
-            items: 1,
-            loop: false,
-            nav: false,
-            autoplay: false,
-            center: false
         });
 
     AOS.init();

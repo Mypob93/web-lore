@@ -142,6 +142,8 @@
     <Content Include="Content\Images\lineas2.png" />
     <Content Include="Content\Images\lore.JPG" />
     <Content Include="Content\Images\lorepongo.JPG" />
+    <Content Include="Content\Images\pongo.png" />
+    <Content Include="Content\Images\pongoIcon.jpeg" />
     <Content Include="Content\owl.carousel.min.css" />
     <Content Include="Content\owl.theme.default.min.css" />
     <Content Include="Content\style.css" />
