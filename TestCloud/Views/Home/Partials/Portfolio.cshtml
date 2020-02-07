@@ -2,42 +2,20 @@
     Layout = null;
 }
 
-<div data-aos="fade-up" id="portfolio-section">
+<div ng-controller="portfolioController" data-aos="fade-up" id="portfolio-section">
     <div class="col-md-12">
         <div class="owl-carousel carousel-portfolio">
-            <div class="item-carousel container-overlay">
-                <img src="~/Content/Images/feed1.png" alt="Feed 1">
+            <div class="item-carousel container-overlay" ng-repeat="trabajo in Trabajos track by $index">
+                <img src="{{ trabajo.Image }}" alt="{{ trabajo.ImageAlt }}">
                 <div class="overlay">
                     <div class="text-overlay">
-                        Aca no hay muhco para escribir.
+                        {{ trabajo.Descripcion }}
                         <div class="text-center btn-portfolio">
-                            <button href="#" class="btn btn-lore">Go!</button>
+                            <button href="{{ trabajo.Link }}" class="btn btn-lore">Go!</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="item-carousel container-overlay">
-                <img src="~/Content/Images/feed2.png" alt="Feed 2">
-                <div class="overlay">
-                    <div class="text-overlay">
-                        Aca menos.
-                        <div class="text-center btn-portfolio">
-                            <button href="#" class="btn btn-lore">Go!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item-carousel container-overlay">
-                <img src="~/Content/Images/feed3.png" alt="Feed 3">
-                <div class="overlay">
-                    <div class="text-overlay">
-                        Blablasdsa da  n,asd iajsdo asd pj jpasd jklads asd asdkjñsad asd ñah dadshjk
-                        <div class="text-center btn-portfolio">
-                            <button href="#" class="btn btn-lore">Go!</button>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
+        </div>        
     </div>   
 </div>

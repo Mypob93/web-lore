@@ -158,6 +158,9 @@
     <Content Include="Resources\fontawesome\css\font-awesome.css" />
     <Content Include="Resources\fontawesome\css\font-awesome.min.css" />
     <Content Include="Resources\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Scripts\AngularJs\myApp.js" />
+    <Content Include="Scripts\AngularJs\contactController.js" />
+    <Content Include="Scripts\AngularJs\portfolioController.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Resources\fontawesome\fonts\fontawesome-webfont.eot" />

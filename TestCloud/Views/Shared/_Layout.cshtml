@@ -22,6 +22,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="~/fonts/flaticon/font/flaticon.css">
     <script src="~/Scripts/cookieHandler.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="~/Scripts/AngularJs/myApp.js"></script>
+    <script src="~/Scripts/AngularJs/portfolioController.js"></script>
+    <script src="~/Scripts/AngularJs/contactController.js"></script>
     <script src="~/Scripts/prueba.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar-lore" data-offset="300">
@@ -65,7 +69,7 @@
 
         </div>
     </div>
-    <div class="body-content">
+    <div ng-app="myApp" class="body-content">
         @RenderBody()
     </div>
 

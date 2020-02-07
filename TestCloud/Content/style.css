@@ -81,7 +81,7 @@ body {
 .header{
 	position: fixed;
 	width: 100%;
-    z-index: 9999;
+    z-index: 6000;
 }
 
 .header li a{
@@ -570,4 +570,16 @@ body {
 .btn-portfolio{
     position: relative !important;
     top: 60%;
+}
+
+#overlayer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 7100;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

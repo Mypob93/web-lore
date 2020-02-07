@@ -2,7 +2,7 @@
     Layout = null;
 }
 
-<div data-aos="zoom-in" id="contactme-section" class="content">
+<div ng-controller="contactController" data-aos="zoom-in" id="contactme-section" class="content">
     <div class="row">
         <div class="offset-md-3 col-md-6">
             <div id="contactme" class="jumbotron">
@@ -14,31 +14,33 @@
                             <fieldset class="contact-form">
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
-                                        <input id="nameContact" class="form-control" type="text" name="Name" placeholder="Name" required>
+                                        <input id="nameContact" ng-model="Name" class="form-control" type="text" name="Name" placeholder="Name" required>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
-                                        <input id="emailContact" class="form-control" type="email" name="Email" placeholder="Email address" required>
+                                        <input id="emailContact" ng-model="Email" class="form-control" type="email" name="Email" placeholder="Email address" required>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
-                                        <input id="subjectContact" class="form-control" type="text" name="Subject" placeholder="Subject" required>
+                                        <input id="subjectContact" ng-model="Subject" class="form-control" type="text" name="Subject" placeholder="Subject" required>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
-                                        <textarea id="messageContact" rows="5" class="form-control" name="Message" placeholder="Add your message here" required></textarea>
+                                        <textarea id="messageContact" ng-model="Message" rows="5" class="form-control" name="Message" placeholder="Add your message here" required></textarea>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 btn-submit">
-                                        <input class="btn btn-lore btn-block" type="submit" id="submit" value="Submit">
+                                        <button ng-disabled="!canSendMail" ng-click="sendMail()" type="button" class="btn btn-lore btn-block">
+                                            Submit
+                                        </button>
                                     </div>
                                 </div>
                             </fieldset>

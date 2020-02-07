@@ -1,6 +1,6 @@
 $(document).ready(() =>
 {
-    setSubmit(); // setea el submit
+    handleLoader();
     $(".owl-carousel.carousel-portfolio").owlCarousel( // instancia el carousel
         {
             margin: 10,
@@ -72,35 +72,6 @@ function removeLoader() {
     });
 }
 
-function sendEmail() {
-    addLoader();
-    let data = getContactData();
-    $.ajax({
-        type: "POST",
-        url: "/Home/ContactMe",
-        data: JSON.stringify(data),
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        success: function (response) {
-            $('#contactForm')[0].reset();
-            removeLoader();
-        },
-        error: function (error) {
-            console.log(error);
-            removeLoader();
-        }
-    });
-}
-
-function getContactData() {
-    return {
-        Name: $("#nameContact").val(),
-        Email: $("#emailContact").val(),
-        Subject: $("#subjectContact").val(),
-        Message: $("#messageContact").val()
-    }
-}
-
 function contactIsValid(){
 	return $("#contactForm")[0].reportValidity();
 }
@@ -110,4 +81,8 @@ function clickMenu(section) {
     if ($(".navbar-toggler").css('display') != 'none') {
         $(".navbar-toggler").trigger('click');
     }
+}
+
+function handleLoader() {
+    $("#overlayer").delay(1000).fadeOut("slow");
 }
