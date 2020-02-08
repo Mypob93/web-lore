@@ -24,6 +24,10 @@
     <script src="~/Scripts/cookieHandler.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <script src="~/Scripts/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="~/Content/jquery.fancybox.min.css">
+
     <script src="~/Scripts/AngularJs/myApp.js"></script>
     <script src="~/Scripts/AngularJs/portfolioController.js"></script>
     <script src="~/Scripts/AngularJs/portfolioCardsController.js"></script>
@@ -61,14 +65,14 @@
                     </ul>
                 </div>
                 @*<div class="collapse navbar-collapse justify-content-end">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="/" class="header-branding">
-                                <img src="~/Content/Images/pongo.png" alt="Logo de Lore" class="header-branding-logo">
-                            </a>
-                        </li>
-                    </ul>
-                </div>*@
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="/" class="header-branding">
+                                    <img src="~/Content/Images/pongo.png" alt="Logo de Lore" class="header-branding-logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>*@
             </nav>
 
         </div>
@@ -78,6 +82,5 @@
     </div>
 
     @RenderSection("scripts", required: false)
-
 </body>
 </html>

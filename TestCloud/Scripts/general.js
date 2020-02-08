@@ -57,5 +57,5 @@ var siteIstotope = function () {
         $(this).addClass('active');
     });
 
-    $("#filters .all").trigger('click');
+    //$("#filters .all").trigger('click');
 }

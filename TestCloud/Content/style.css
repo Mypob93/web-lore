@@ -9,7 +9,7 @@ p{
 }
 
 body{
-    font-family: MadeMirage;
+    font-family: MadeMirage !important;
 }
 
 @media only screen and (max-width: 750px) {

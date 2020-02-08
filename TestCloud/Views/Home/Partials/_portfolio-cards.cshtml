@@ -13,11 +13,11 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row portfolio-row">
             <div class="col-md-12">
                 <div id="posts" class="row no-gutter">
                     <div ng-repeat="trabajo in Trabajos track by $index" class="item {{ trabajo.Section }} col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <img class="img-fluid" src="{{ trabajo.Image }}">
+                        <a class="fancybox" href="{{ trabajo.Image }}" rel="gallery1" data-fancybox-group="gallery"><img class="img-fluid" src="{{ trabajo.Image }}"></a> 
                     </div>
                 </div>
             </div>
