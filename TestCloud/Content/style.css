@@ -171,6 +171,7 @@ body {
     font-size: 1rem !important;
     font-family: MadeMirage;
     transition: transform 2s;
+    margin: 2px;
 }
 
     .btn-lore-sm.active {
@@ -636,9 +637,16 @@ body {
     box-shadow: none !important;
 }
 
-.portfolio-container{
+.portfolio-container {
     padding-top: 10% !important;
 }
+
+@media (max-width: 500px) {
+    .portfolio-container {
+        padding-top: 20% !important;
+    }
+}
+
 
 .portfolio-row {
     min-height: unset !important;

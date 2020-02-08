@@ -3,90 +3,25 @@
 }
 
 <section class="site-section block__62272" id="next-section">
-
-
-    <div class="container">
+    <div class="container" ng-controller="portfolioCardsController">
         <div class="row portfolio-row justify-content-center mb-5" data-aos="fade-up">
             <div id="filters" class="filters text-center button-group col-md-7">
-                <button class="btn btn-lore-sm active" data-filter="*">All</button>
+                <button class="btn btn-lore-sm active all" data-filter="*">All</button>
                 <button class="btn btn-lore-sm" data-filter=".web">Web</button>
                 <button class="btn btn-lore-sm" data-filter=".design">Design</button>
                 <button class="btn btn-lore-sm" data-filter=".brand">Brand</button>
             </div>
         </div>
 
-        <div id="posts" class="row no-gutter">
-            <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_12.jpg">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="posts" class="row no-gutter">
+                    <div ng-repeat="trabajo in Trabajos track by $index" class="item {{ trabajo.Section }} col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <img class="img-fluid" src="{{ trabajo.Image }}">
+                    </div>
+                </div>
             </div>
-
-            <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_2.jpg">
-            </div>
-
-            <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_5.jpg">
-            </div>
-
-            <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_12.jpg">
-            </div>
-
-            <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_2.jpg">
-            </div>
-
-            <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_5.jpg">
-            </div>
-
-            <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_12.jpg">
-            </div>
-
-            <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_2.jpg">
-            </div>
-
-            <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_5.jpg">
-            </div>
-
-            <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_12.jpg">
-            </div>
-
-            <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_2.jpg">
-            </div>
-
-            <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_5.jpg">
-            </div>
-
-            <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_12.jpg">
-            </div>
-
-            <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_2.jpg">
-            </div>
-
-            <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_5.jpg">
-            </div>
-
-            <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_12.jpg">
-            </div>
-
-            <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_2.jpg">
-            </div>
-
-            <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                <img class="img-fluid" src="~/Content/Images/sq_img_5.jpg">
-            </div>
+            
         </div>
     </div>
 

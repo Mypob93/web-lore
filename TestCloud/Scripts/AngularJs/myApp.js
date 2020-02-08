@@ -1,4 +1,5 @@
 var $app = angular.module("myApp", [
     "myApp.portfolioController",
-    "myApp.contactController"
+    "myApp.contactController",
+    "myApp.portfolioCardsController"
 ]);

@@ -1,7 +1,6 @@
 $(document).ready(() =>
 {
     handleLoader();
-    siteIstotope();
 
     AOS.init();
 
@@ -15,5 +14,9 @@ $(document).ready(() =>
             $('.navbar-lore').removeClass('shrink');
         }
 
-    })
+    });
+})
+
+$(window).load(() => {
+    siteIstotope();
 })

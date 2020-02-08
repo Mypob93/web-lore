@@ -41,7 +41,6 @@ function handleLoader() {
 }
 
 var siteIstotope = function () {
-    /* activate jquery isotope */
     var $container = $('#posts').isotope({
         itemSelector: '.item',
         isFitWidth: true
@@ -57,4 +56,6 @@ var siteIstotope = function () {
         $('#filters button').removeClass('active');
         $(this).addClass('active');
     });
+
+    $("#filters .all").trigger('click');
 }

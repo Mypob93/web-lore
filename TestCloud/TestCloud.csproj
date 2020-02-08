@@ -145,9 +145,12 @@
     <Content Include="Content\Images\lorepongo.JPG" />
     <Content Include="Content\Images\pongo.png" />
     <Content Include="Content\Images\pongoIcon.jpeg" />
+    <Content Include="Content\Images\sq_img_1.jpg" />
     <Content Include="Content\Images\sq_img_12.jpg" />
     <Content Include="Content\Images\sq_img_2.jpg" />
+    <Content Include="Content\Images\sq_img_4.jpg" />
     <Content Include="Content\Images\sq_img_5.jpg" />
+    <Content Include="Content\Images\sq_img_9.jpg" />
     <Content Include="Content\owl.carousel.min.css" />
     <Content Include="Content\owl.theme.default.min.css" />
     <Content Include="Content\style.css" />
@@ -164,6 +167,7 @@
     <Content Include="Resources\fontawesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Scripts\AngularJs\myApp.js" />
     <Content Include="Scripts\AngularJs\contactController.js" />
+    <Content Include="Scripts\AngularJs\portfolioCardsController.js" />
     <Content Include="Scripts\AngularJs\portfolioController.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
