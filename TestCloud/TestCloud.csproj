@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -144,6 +145,9 @@
     <Content Include="Content\Images\lorepongo.JPG" />
     <Content Include="Content\Images\pongo.png" />
     <Content Include="Content\Images\pongoIcon.jpeg" />
+    <Content Include="Content\Images\sq_img_12.jpg" />
+    <Content Include="Content\Images\sq_img_2.jpg" />
+    <Content Include="Content\Images\sq_img_5.jpg" />
     <Content Include="Content\owl.carousel.min.css" />
     <Content Include="Content\owl.theme.default.min.css" />
     <Content Include="Content\style.css" />
@@ -206,7 +210,9 @@
     <Content Include="fonts\flaticon\font\Flaticon.woff2" />
     <Content Include="fonts\flaticon\font\_flaticon.scss" />
     <Content Include="fonts\flaticon\license\license.pdf" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\portfolio.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -219,7 +225,8 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\owl.carousel.min.js" />
     <Content Include="Scripts\cookieHandler.js" />
-    <Content Include="Scripts\prueba.js" />
+    <Content Include="Scripts\index.js" />
+    <Content Include="Scripts\general.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -234,8 +241,10 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Partials\Portfolio.cshtml" />
-    <Content Include="Views\Home\Partials\ContactMe.cshtml" />
+    <Content Include="Views\Home\Partials\_portfolio.cshtml" />
+    <Content Include="Views\Home\Partials\_contactme.cshtml" />
+    <Content Include="Views\Home\Portfolio.cshtml" />
+    <Content Include="Views\Home\Partials\_portfolio-cards.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

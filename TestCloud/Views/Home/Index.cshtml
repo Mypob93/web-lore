@@ -2,6 +2,8 @@
     ViewBag.Title = "Home Page";
 }
 
+<script src="~/Scripts/index.js"></script>
+
 <div id="overlayer">
     <div class="spinner"></div>
 </div>
@@ -10,25 +12,25 @@
     <div class="intro-section">
         <div class="container" id="home-section">
             <div class="row align-items-center">
-                <div class="col-lg-5 mr-auto" data-aos="fade-up">
+                <div class="col-lg-5 mr-auto intro-text" data-aos="fade-up">
                     <div class="slide-text">
                         <h1 class="h1-title mb-5">We Do Awesome Things</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                        <div class="offset-md-2 col-md-8 offset-md-2">
-                            <button href="#" class="btn btn-lore btn-block">My porftolio</button>
+                        <div class="text-center">
+                            <a href="/Home/Portfolio" class="btn btn-lore">My porftolio</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 ml-auto" data-aos="fade-up">
+                <div class="col-lg-6 ml-auto">
                     <div class="testing">
-                        <img src="~/Content/Images/lore.JPG" alt="Image" class="img-fluid">
+                        <img src="~/Content/Images/lore.JPG" alt="Image" class="img-fluid intro-img">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <img src="~/Content/Images/lineas2.png" class="linea-divisoria">
+    <div class="linea-divisoria"></div>
 
     <div class="container" id="services-section">
         <div class="row">
@@ -60,14 +62,12 @@
         </div>
     </div>
 
-</div>
 
+    <div class="linea-divisoria"></div>
 
-<img src="~/Content/Images/lineas2.png" class="linea-divisoria">
+    @Html.Partial("~/Views/Home/Partials/_portfolio.cshtml")
 
-@Html.Partial("~/Views/Home/Partials/Portfolio.cshtml")
+    <div class="linea-divisoria"></div>
 
-<img src="~/Content/Images/lineas2.png" class="linea-divisoria">
-
-@Html.Partial("~/Views/Home/Partials/ContactMe.cshtml")
+    @Html.Partial("~/Views/Home/Partials/_contactme.cshtml")
 </div>

@@ -16,6 +16,11 @@ namespace TestCloud.Controllers
             return View();
         }
 
+        public ActionResult Portfolio()
+        {
+            return View("Portfolio");
+        }
+
 
         [HttpPost]
         public JsonResult ContactMe(ContactMeViewModel viewModel)
