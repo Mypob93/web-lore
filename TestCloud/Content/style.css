@@ -663,3 +663,16 @@ body {
         height: 100%;
         object-fit: cover;
     }*/
+
+.bootstrap-select .inner{
+    overflow: hidden !important;
+}
+
+.bootstrap-select .inner ul{
+    overflow: hidden !important;
+}
+
+.btn-light{
+    background-color: transparent !important;
+    border-color: transparent !important;
+}

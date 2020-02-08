@@ -1,0 +1,22 @@
+[
+  {
+    "Key": "bienvenidos",
+    "Value": "Welcome!"
+  },
+  {
+    "Key": "contacto",
+    "Value": "Contact"
+  },
+  {
+    "Key": "inicio",
+    "Value": "Home"
+  },
+  {
+    "Key": "portfolio",
+    "Value": "Portfolio"
+  },
+  {
+    "Key": "sobremi",
+    "Value": "About me"
+  }
+]
