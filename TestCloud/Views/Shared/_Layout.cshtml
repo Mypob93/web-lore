@@ -34,7 +34,6 @@
     <script src="~/Scripts/AngularJs/portfolioController.js"></script>
     <script src="~/Scripts/AngularJs/portfolioCardsController.js"></script>
     <script src="~/Scripts/AngularJs/contactController.js"></script>
-    <script src="~/Scripts/AngularJs/headerController.js"></script>
     <script src="~/Scripts/general.js"></script>
 
 
@@ -48,8 +47,8 @@
 
 </head>
 <body data-spy="scroll" data-target=".navbar-lore" data-offset="300">
-    <div ng-app="myApp">
-        <div class="header" ng-controller="headerController">
+    <div>
+        <div class="header">
             <nav class="navbar navbar-expand-md navbar-lore navbar-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="">
@@ -94,7 +93,7 @@
 
         </div>
     </div>
-    <div class="body-content">
+    <div class="body-content" ng-app="myApp">
         @RenderBody()
     </div>
 

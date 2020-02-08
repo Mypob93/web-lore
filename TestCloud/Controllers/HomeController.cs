@@ -22,6 +22,7 @@ namespace TestCloud.Controllers
 
         public ActionResult Portfolio()
         {
+            SetIdioma();
             return View("Portfolio");
         }
 
@@ -107,10 +108,9 @@ namespace TestCloud.Controllers
 
         private IDictionary<string, string> ReadLangFile(string path)
         {
-            string pathe = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-            var asd = Server.MapPath(path);
+            var mappedPath = Server.MapPath(path);
 
-            var json = FileReaderHelper.Read(asd);
+            var json = FileReaderHelper.Read(mappedPath);
 
             var values = JsonConvert.DeserializeObject<List<LanguageKey>>(json);
 

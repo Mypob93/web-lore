@@ -1,9 +1,5 @@
 $(document).ready(() =>
 {
-    handleLoader();
-
-    AOS.init();
-
     $(window).scroll(function () {
 
         var st = $(this).scrollTop();

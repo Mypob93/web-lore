@@ -171,7 +171,6 @@
     <Content Include="Scripts\AngularJs\myApp.js" />
     <Content Include="Scripts\AngularJs\contactController.js" />
     <Content Include="Scripts\AngularJs\portfolioCardsController.js" />
-    <Content Include="Scripts\AngularJs\headerController.js" />
     <Content Include="Scripts\AngularJs\portfolioController.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

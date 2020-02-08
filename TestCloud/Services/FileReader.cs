@@ -8,10 +8,15 @@ namespace TestCloud.Services
 {
     public static class FileReaderHelper
     {
+        static readonly object _fileAccess = new object();
+
         public static string Read(string path)
         {
-            var json = File.ReadAllText(path);
-            return json;
+            lock (_fileAccess)
+            {
+                var json = File.ReadAllText(path);
+                return json;
+            }            
         }
     }
 }

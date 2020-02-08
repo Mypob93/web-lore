@@ -1,20 +1,5 @@
 $(document).ready(() =>
 {
-    $('.selectpicker').selectpicker();
-
-    checkLangCookie();
-
-    $("select").on("changed.bs.select",
-        function (e, clickedIndex, newValue, oldValue) {
-            let value = $('.selectpicker').val();
-            setCookie("lang-web", value);
-            location.reload();
-            // set cookie con valor sin expiracion
-            // reload pagina
-        });
-
-
-    handleLoader();
     $(".owl-carousel.carousel-portfolio").owlCarousel( // instancia el carousel
         {
             margin: 10,
@@ -43,8 +28,6 @@ $(document).ready(() =>
             }
         });
 
-    AOS.init();
-
     $(window).scroll(function () {
 
         var st = $(this).scrollTop();
@@ -57,12 +40,3 @@ $(document).ready(() =>
 
     })
 })
-
-
-var checkLangCookie = function () {
-    let lCookie = getCookie("lang-web");
-
-    if (lCookie != undefined) {
-        $('.selectpicker').selectpicker('val', lCookie)
-    }
-}

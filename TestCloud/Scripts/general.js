@@ -1,4 +1,24 @@
-function setSubmit(){
+$(document).ready(() => {
+    // carga los idiomas
+    $('.selectpicker').selectpicker();
+
+    checkLangCookie();
+
+    $("select").on("changed.bs.select",
+        function (e, clickedIndex, newValue, oldValue) {
+            let value = $('.selectpicker').val();
+            setCookie("lang-web", value);
+            location.reload();
+        });
+
+    // carga AOS
+    AOS.init();
+
+    // desactivar loader
+    handleLoader();
+})
+
+function setSubmit() {
 	$("#submit").click(e => {
 		e.preventDefault();
 		
@@ -58,4 +78,12 @@ var siteIstotope = function () {
     });
 
     //$("#filters .all").trigger('click');
+}
+
+var checkLangCookie = function () {
+    let lCookie = getCookie("lang-web");
+
+    if (lCookie != undefined) {
+        $('.selectpicker').selectpicker('val', lCookie)
+    }
 }
