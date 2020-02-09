@@ -26,12 +26,29 @@ body{
 
 @media only screen and (max-device-width: 480px) {
     /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .intro-text {
+        margin: 10% 0 !important;
+    }
+
+    .post-intro {
+        margin-top: 20% !important;
+    }
+
+    .intro-section:before {
+        height: 105% !important;
+    }
 }
 
 @media only screen and (device-width: 768px) {
     /* default iPad screens */
     .intro-text{
-        margin-top: 20% !important;
+        margin: 20% 0 !important;
+    }
+    .post-intro{
+        margin-top: 40% !important;
+    }
+    .intro-section:before {
+        height: 120% !important;
     }
 }
 /* different techniques for iPad screening */
@@ -504,8 +521,6 @@ body {
 }
 
 .service {
-    left: 25%;
-    width: 60%;
     padding: 4rem;
     background: #fff;
     position: relative;
@@ -515,6 +530,8 @@ body {
     -webkit-transition: 0.3s all cubic-bezier(0.17, 0.67, 0.52, 0.94);
     -o-transition: 0.3s all cubic-bezier(0.17, 0.67, 0.52, 0.94);
     transition: 0.3s all cubic-bezier(0.17, 0.67, 0.52, 0.94);
+    -webkit-box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 991.98px) {
@@ -553,7 +570,7 @@ body {
     position: absolute;
     content: "";
     height: 7px;
-    background: black;
+    background: var(--second-color-app);
     top: 0;
     left: 0;
     width: 100%;
