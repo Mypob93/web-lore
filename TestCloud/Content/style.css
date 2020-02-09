@@ -429,6 +429,7 @@ body {
     min-height: 75px;
     background-image: url(/Content/Images/lineas2.png);
     background-repeat: round;
+    background-size: cover;
 }
 
 .img-title{
