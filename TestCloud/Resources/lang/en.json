@@ -18,5 +18,85 @@
   {
     "Key": "sobremi",
     "Value": "About me"
+  },
+  {
+    "Key": "testimonios",
+    "Value": "Testimonials"
+  },
+  {
+    "Key": "tituloinicio",
+    "Value": "We Do Awesome Things"
+  },
+  {
+    "Key": "descripcioninicio",
+    "Value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus."
+  },
+  {
+    "Key": "descripcionbtninicio",
+    "Value": "My portfolio"
+  },
+  {
+    "Key": "servicios",
+    "Value": "Services"
+  },
+  {
+    "Key": "tituloservicio1",
+    "Value": "Branding Design"
+  },
+  {
+    "Key": "descripcionservicio1",
+    "Value": "Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi."
+  },
+  {
+    "Key": "tituloservicio2",
+    "Value": "WordPress Integration"
+  },
+  {
+    "Key": "descripcionservicio2",
+    "Value": "Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi."
+  },
+  {
+    "Key": "btncallme",
+    "Value": "Call me!"
+  },
+  {
+    "Key": "descripcioncliente",
+    "Value": "Client description"
+  },
+  {
+    "Key": "nombre",
+    "Value": "Name"
+  },
+  {
+    "Key": "email",
+    "Value": "Email address"
+  },
+  {
+    "Key": "tema",
+    "Value": "Subject"
+  },
+  {
+    "Key": "mensaje",
+    "Value": "Add your message here"
+  },
+  {
+    "Key": "enviar",
+    "Value": "Submit"
+  },
+  {
+    "Key": "todo",
+    "Value": "All"
+  },
+  {
+    "Key": "web",
+    "Value": "Web"
+  },
+  {
+    "Key": "disenio",
+    "Value": "Design"
+  },
+  {
+    "Key": "marca",
+    "Value": "Brand"
   }
 ]

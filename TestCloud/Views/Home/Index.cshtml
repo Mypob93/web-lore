@@ -1,5 +1,7 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@using TestCloud.Models;
+
+@{
+    var userLocalizer = ViewBag.Localizer as Dictionary<string, string>;
 }
 
 <script src="~/Scripts/index.js"></script>
@@ -14,10 +16,10 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 mr-auto intro-text" data-aos="fade-up">
                     <div class="slide-text">
-                        <h1 class="h1-title mb-5">We Do Awesome Things</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
+                        <h1 class="h1-title mb-5">@userLocalizer.GetTranslationByKey("tituloinicio")</h1>
+                        <p>@userLocalizer.GetTranslationByKey("descripcioninicio")</p>
                         <div class="text-center">
-                            <a href="/Home/Portfolio" class="btn btn-lore">My porftolio</a>
+                            <a href="/Home/Portfolio" class="btn btn-lore">@userLocalizer.GetTranslationByKey("descripcionbtninicio")</a>
                         </div>
                     </div>
                 </div>
@@ -35,28 +37,28 @@
     <div class="container" id="services-section">
         <div class="row">
             <div class="offset-md-3 col-md-6 offset-xl-0 col-xl-12 mb-3">
-                <h1 class="h1-title">Services</h1>
+                <h1 class="h1-title">@userLocalizer.GetTranslationByKey("servicios")</h1>
             </div>
 
             <div class="col-xl-6 col-md-12 mb-3">
                 <div class="service" data-aos="flip-left">
                     <span class="custom-icon-wrap"><span class="flaticon-glasses"></span></span>
-                    <h3>Branding Design</h3>
-                    <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+                    <h3>@userLocalizer.GetTranslationByKey("tituloservicio1")</h3>
+                    <p>@userLocalizer.GetTranslationByKey("descripcionservicio1")</p>
                 </div>
             </div>
 
             <div class="col-xl-6 col-md-12 mb-3">
                 <div class="service" data-aos="flip-left" data-aos-delay="100">
                     <span class="custom-icon-wrap"><span class="flaticon-monitor"></span></span>
-                    <h3>WordPress Integration</h3>
-                    <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+                    <h3>@userLocalizer.GetTranslationByKey("tituloservicio2")</h3>
+                    <p>@userLocalizer.GetTranslationByKey("descripcionservicio2")</p>
                 </div>
             </div>
 
             <div class="col-md-12 mt-3">
                 <div class="offset-md-4 col-md-4 offset-md-4">
-                    <button href="#" class="btn btn-lore btn-block">Call me!</button>
+                    <button href="#" class="btn btn-lore btn-block">@userLocalizer.GetTranslationByKey("btncallme")</button>
                 </div>
             </div>
         </div>

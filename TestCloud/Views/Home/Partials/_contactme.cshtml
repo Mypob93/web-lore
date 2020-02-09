@@ -1,5 +1,8 @@
-﻿@{
+﻿@using TestCloud.Models;
+
+@{
     Layout = null;
+    var userLocalizer = ViewBag.Localizer as Dictionary<string, string>;
 }
 
 <div ng-controller="contactController" data-aos="zoom-in" id="contactme-section" class="content">
@@ -14,32 +17,32 @@
                             <fieldset class="contact-form">
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
-                                        <input id="nameContact" ng-model="Name" class="form-control" type="text" name="Name" placeholder="Name" required>
+                                        <input id="nameContact" ng-model="Name" class="form-control" type="text" name="Name" placeholder="{{ namePlaceholder }}" required>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
-                                        <input id="emailContact" ng-model="Email" class="form-control" type="email" name="Email" placeholder="Email address" required>
+                                        <input id="emailContact" ng-model="Email" class="form-control" type="email" name="Email" placeholder="{{ emailPlaceholder }}" required>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
-                                        <input id="subjectContact" ng-model="Subject" class="form-control" type="text" name="Subject" placeholder="Subject" required>
+                                        <input id="subjectContact" ng-model="Subject" class="form-control" type="text" name="Subject" placeholder="{{ temaPlaceholder }}" required>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
-                                        <textarea id="messageContact" ng-model="Message" rows="5" class="form-control" name="Message" placeholder="Add your message here" required></textarea>
+                                        <textarea id="messageContact" ng-model="Message" rows="5" class="form-control" name="Message" placeholder="{{ mensajePlaceholder }}" required></textarea>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 btn-submit">
                                         <button ng-disabled="!canSendMail" ng-click="sendMail()" type="button" class="btn btn-lore btn-block">
-                                            Submit
+                                            @userLocalizer.GetTranslationByKey("enviar")
                                         </button>
                                     </div>
                                 </div>

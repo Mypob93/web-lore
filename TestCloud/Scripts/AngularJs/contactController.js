@@ -6,6 +6,11 @@ app.controller('contactController', function ($scope, $http) {
     $scope.Subject = "";
     $scope.Message = "";
 
+    $scope.namePlaceholder = getTranslationByKey("nombre");
+    $scope.emailPlaceholder = getTranslationByKey("email");
+    $scope.temaPlaceholder = getTranslationByKey("tema");
+    $scope.mensajePlaceholder = getTranslationByKey("mensaje");
+
     $scope.canSendMail = true;
 
     $scope.sendMail = function () {

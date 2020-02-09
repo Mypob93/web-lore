@@ -50,7 +50,7 @@ function contactIsValid(){
 }
 
 function clickMenu(section) {
-    window.location = section;
+    //window.location = section;
     if ($(".navbar-toggler").css('display') != 'none') {
         $(".navbar-toggler").trigger('click');
     }

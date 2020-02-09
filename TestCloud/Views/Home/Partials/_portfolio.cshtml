@@ -1,5 +1,8 @@
-﻿@{
+﻿@using TestCloud.Models;
+
+@{
     Layout = null;
+    var userLocalizer = ViewBag.Localizer as Dictionary<string, string>;
 }
 
 <div ng-controller="portfolioController" data-aos="fade-up" id="portfolio-section">
@@ -9,13 +12,10 @@
                 <img src="{{ trabajo.Image }}" alt="{{ trabajo.ImageAlt }}">
                 <div class="overlay">
                     <div class="text-overlay">
-                        {{ trabajo.Descripcion }}
-                        <div class="text-center btn-portfolio">
-                            <button href="{{ trabajo.Link }}" class="btn btn-lore">Go!</button>
-                        </div>
+                        {{ trabajo.KeyDescripcion }}
                     </div>
                 </div>
             </div>
-        </div>        
-    </div>   
+        </div>
+    </div>
 </div>

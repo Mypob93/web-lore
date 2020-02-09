@@ -6,21 +6,21 @@ app.controller('portfolioController', function ($scope, $http) {
     $scope.Trabajo1 = {
         Image: "/Content/Images/feed1.png",
         ImageAlt: "Descripcion genérica",
-        Descripcion: "Descripción del cliente",
+        KeyDescripcion: getTranslationByKey("descripcioncliente"),
         Link: "#"
     };
 
     $scope.Trabajo2 = {
         Image: "/Content/Images/feed2.png",
         ImageAlt: "Descripcion genérica",
-        Descripcion: "Descripción del cliente",
+        KeyDescripcion: getTranslationByKey("descripcioncliente"),
         Link: "#"
     };
 
     $scope.Trabajo3 = {
         Image: "/Content/Images/feed3.png",
         ImageAlt: "Descripcion genérica",
-        Descripcion: "Descripción del cliente",
+        KeyDescripcion: getTranslationByKey("descripcioncliente"),
         Link: "#"
     };
 
