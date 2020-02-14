@@ -1,6 +1,6 @@
 var app = angular.module('myApp.contactController', []);
 
-app.controller('contactController', function ($scope, $http) {
+app.controller('contactController',["$scope", "$http", function ($scope, $http) {
     $scope.Name = "";
     $scope.Email = "";
     $scope.Subject = "";
@@ -42,6 +42,6 @@ app.controller('contactController', function ($scope, $http) {
     }
 
     controladorContacto = $scope;
-});
+}]);
 
 var controladorContacto;

@@ -1,6 +1,6 @@
 var app = angular.module('myApp.portfolioCardsController', []);
 
-app.controller('portfolioCardsController', function ($scope, $http) {   
+app.controller('portfolioCardsController', ["$scope", "$http", function ($scope, $http) {   
 
     $scope.Trabajo1 = {
         Image: "/Content/Images/sq_img_12.jpg",
@@ -62,4 +62,4 @@ app.controller('portfolioCardsController', function ($scope, $http) {
     $scope.Trabajos.push($scope.Trabajo4);
     $scope.Trabajos.push($scope.Trabajo5);
     $scope.Trabajos.push($scope.Trabajo6);
-});
+}]);
