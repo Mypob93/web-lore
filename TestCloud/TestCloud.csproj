@@ -137,6 +137,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\3.jpg" />
+    <Content Include="Content\Images\facetache.png" />
     <Content Include="Content\Images\feed1.png" />
     <Content Include="Content\Images\feed2.png" />
     <Content Include="Content\Images\feed3.png" />
