@@ -16,6 +16,7 @@ namespace TestCloud.Controllers
     {
         public ActionResult Index()
         {
+            var test = ConfigurationManager.GetSection("portfolioSettings");
             SetIdioma();
             return View();
         }
@@ -24,6 +25,11 @@ namespace TestCloud.Controllers
         {
             SetIdioma();
             return View("Portfolio");
+        }
+
+        public ActionResult Blog()
+        {
+            return View("Blog");
         }
 
 

@@ -16,6 +16,13 @@ $(document).ready(() => {
 
     // desactivar loader
     handleLoader();
+
+    $("#collapsibleNavbar ul li a").click(event, element => {
+        event.preventDefault();
+
+        let redirect = $(event.target).data('redirect');
+        clickMenu(redirect);
+    })
 })
 
 function setSubmit() {
@@ -50,9 +57,19 @@ function contactIsValid(){
 }
 
 function clickMenu(section) {
-    //window.location = section;
     if ($(".navbar-toggler").css('display') != 'none') {
         $(".navbar-toggler").trigger('click');
+    }
+
+    if (document.location.pathname.startsWith('/Home/Portfolio')) {
+        if (section !== "/Home/Portfolio") {
+            let t = "http://" + window.location.host + '/' + section;
+            window.location = t;
+        }
+    }
+    else {
+        let t = "http://" + window.location.host + section;
+        window.location = t;
     }
 }
 

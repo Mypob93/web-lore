@@ -28,6 +28,20 @@ $(document).ready(() =>
             }
         });
 
+    $('.slide-one-item').owlCarousel({
+        center: false,
+        items: 1,
+        loop: true,
+        stagePadding: 0,
+        margin: 0,
+        smartSpeed: 1000,
+        autoHeight: true,
+        autoplay: true,
+        pauseOnHover: false,
+        nav: false,
+        dots: true
+    });
+
     $(window).scroll(function () {
 
         var st = $(this).scrollTop();

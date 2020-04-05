@@ -137,7 +137,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\3.jpg" />
-    <Content Include="Content\Images\facetache.png" />
+    <Content Include="Content\Images\facebookicon.png" />
     <Content Include="Content\Images\feed1.png" />
     <Content Include="Content\Images\feed2.png" />
     <Content Include="Content\Images\feed3.png" />
@@ -148,6 +148,7 @@
     <Content Include="Content\Images\lorepongo.JPG" />
     <Content Include="Content\Images\pongo.png" />
     <Content Include="Content\Images\pongoIcon.jpeg" />
+    <Content Include="Content\Images\instagramicon.png" />
     <Content Include="Content\Images\sq_img_1.jpg" />
     <Content Include="Content\Images\sq_img_12.jpg" />
     <Content Include="Content\Images\sq_img_2.jpg" />
@@ -256,6 +257,7 @@
     <Content Include="Views\Home\Partials\_contactme.cshtml" />
     <Content Include="Views\Home\Portfolio.cshtml" />
     <Content Include="Views\Home\Partials\_portfolio-cards.cshtml" />
+    <Content Include="Views\Home\Blog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
