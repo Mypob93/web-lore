@@ -1,24 +1,15 @@
-h1{
-	color: var(--main-color-app);	
-    font-family: veganFont;
+h1 {
+    color: var(--main-color-app);
+    font-family: AugustScriptBoldFree;
 }
 
 p{
 	color: black;
-    font-family: MadeMirage;
+    font-family: Calibri;
 }
 
-body{
-    font-family: MadeMirage !important;
-}
-
-@media only screen and (min-width: 2000px) {
-    /* for sumo sized (mac) screens */
-}
-
-
-@media only screen and (min-width: 1440px) {
-    /* styles for browsers larger than 1440px; */
+body {
+    font-family: Calibri !important;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -69,8 +60,11 @@ body{
     .intro-section p {
         min-width: 100%;
     }
-}
 
+    .intro-img{
+        max-height: 800px;
+    }
+}
 
 @media only screen and (max-width: 750px) {
     .circle {
@@ -110,7 +104,6 @@ body{
     }
 }
 
-
 @media (max-width: 600px){
     .intro-section-portfolio:before {
         height: 100% !important;
@@ -141,7 +134,6 @@ body{
     }
 }
 
-
 @media (max-width: 480px) {
     /* styles for mobile browsers smaller than 480px; (iPhone) */
     .intro-text {
@@ -151,6 +143,27 @@ body{
     .post-intro {
         margin-top: 20% !important;
     }    
+
+    .intro-section:before {
+        height: 105% !important;
+        width: 100% !important;
+    }
+
+    .intro-section.intro-section-portfolio:before {
+        height: 100% !important;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 320px) {
+    /* styles for mobile browsers smaller than 320px; (iPhone) */
+    .intro-text {
+        margin: 20% 0 !important;
+    }
+
+    .post-intro {
+        margin-top: 60% !important;
+    }
 
     .intro-section:before {
         height: 105% !important;
@@ -192,12 +205,12 @@ body {
     z-index: 6000;
 }
 
-.header li a{
-	color: var(--main-color-app) !important;
-	font-size: 20px;
-	font-family: veganFont;
-	margin: 5px 1px;
-}
+    .header li a {
+        color: var(--main-color-app) !important;
+        font-size: 20px;
+        font-family: NeotericRegular;
+        margin: 5px 1px;
+    }
 
 .fa-navicon{
 	color: var(--main-color-app); 
@@ -238,6 +251,51 @@ body {
   src: url(/fonts/FarOut.ttf);
 }
 
+@font-face {
+    font-family: foratizo;
+    src: url(/fonts/foratizo.ttf);
+}
+
+@font-face {
+    font-family: AlexanderLettering;
+    src: url(/fonts/new/AlexanderLettering.ttf);
+}
+
+@font-face {
+    font-family: Arslina;
+    src: url(/fonts/new/Arslina.ttf);
+}
+
+@font-face {
+    font-family: AugustScriptBoldFree;
+    src: url(/fonts/new/AugustScriptBoldFree.ttf);
+}
+
+@font-face {
+    font-family: Lamplighter_Script;
+    src: url(/fonts/new/Lamplighter_Script.ttf);
+}
+
+@font-face {
+    font-family: NeotericBold;
+    src: url(/fonts/new/NeotericBold.ttf);
+}
+
+@font-face {
+    font-family: NeotericRegular;
+    src: url(/fonts/new/NeotericRegular.ttf);
+}
+
+@font-face {
+    font-family: rogerheart;
+    src: url(/fonts/new/rogerheart.ttf);
+}
+
+@font-face {
+    font-family: Signatie;
+    src: url(/fonts/new/Signatie.ttf);
+}
+
 /*COLORES*/
 :root {
     --main-color-app: #0f0f0e;
@@ -259,7 +317,7 @@ body {
     border-radius: 10px !important;
     text-transform: uppercase;
     font-size: 1.5rem !important;
-    font-family: MadeMirage;
+    font-family: NeotericRegular;
     transition: transform 2s;
 }
 
@@ -279,7 +337,7 @@ body {
     border-radius: 10px !important;
     text-transform: uppercase;
     font-size: 1rem !important;
-    font-family: MadeMirage;
+    font-family: NeotericRegular;
     transition: transform 2s;
     margin: 2px;
 }
@@ -329,9 +387,10 @@ body {
 	top: 40px;
 }
 
-.h1-title{
-	text-align: center;
-	font-family: veganFont;
+.h1-title {
+    font-size: 4rem;
+    text-align: center;
+    font-family: AugustScriptBoldFree;
     color: var(--f-color-app);
 }
 
@@ -585,7 +644,7 @@ body {
 }
 
 .service {
-    padding: 4rem;
+    padding: 1.5rem 3rem;
     background: #fff;
     position: relative;
     border-radius: 4px;
@@ -612,6 +671,7 @@ body {
     -o-transition: 0.2s all cubic-bezier(0.17, 0.67, 0.52, 0.94);
     transition: 0.2s all cubic-bezier(0.17, 0.67, 0.52, 0.94);
     top: 0;
+    margin: 0 auto !important;
 }
 
     .service .custom-icon-wrap > span {
@@ -688,7 +748,13 @@ body {
 }
 
 .intro-section h1{
-    font-size: 3rem;
+    font-size: 5rem;
+}
+
+.intro-section p{
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-align: center;
 }
 
 .intro-section .intro-img {
@@ -784,6 +850,7 @@ body {
 .testimonial{
     text-align: center;
     margin: 0 auto !important;
+    padding: 50px;
     max-width: 600px;
 }
 
@@ -836,4 +903,18 @@ footer a{
 
 .icons img{
     max-width: 25px;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.letsdoit {
+    text-transform: uppercase;
+    font-family: NeotericRegular;
+}
+
+.service h3 {
+    text-transform: uppercase;
+    font-family: NeotericRegular;
 }

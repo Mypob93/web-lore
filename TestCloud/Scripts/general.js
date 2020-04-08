@@ -23,6 +23,8 @@ $(document).ready(() => {
         let redirect = $(event.target).data('redirect');
         clickMenu(redirect);
     })
+    
+    echo.init();
 })
 
 function setSubmit() {
@@ -61,7 +63,7 @@ function clickMenu(section) {
         $(".navbar-toggler").trigger('click');
     }
 
-    if (document.location.pathname.startsWith('/Home/Portfolio')) {
+    if (document.location.pathname.startsWith('/Portfolio')) {
         if (section !== "/Home/Portfolio") {
             let t = "http://" + window.location.host + '/' + section;
             window.location = t;
@@ -74,7 +76,7 @@ function clickMenu(section) {
 }
 
 function handleLoader() {
-    $("#overlayer").delay(1000).fadeOut("slow");
+    $("#overlayer").delay(700).fadeOut("slow");
 }
 
 var siteIstotope = function () {
@@ -84,6 +86,10 @@ var siteIstotope = function () {
     });
 
     $container.isotope({ filter: '*' });
+
+    $container.on('arrangeComplete', (e, items) => {
+        echo.render();
+    });
 
     // filter items on button click
     $('#filters').on('click', 'button', function (e) {

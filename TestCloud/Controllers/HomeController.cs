@@ -12,26 +12,14 @@ using Newtonsoft.Json;
 
 namespace TestCloud.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
+        [Route("")]
         public ActionResult Index()
         {
-            var test = ConfigurationManager.GetSection("portfolioSettings");
             SetIdioma();
             return View();
         }
-
-        public ActionResult Portfolio()
-        {
-            SetIdioma();
-            return View("Portfolio");
-        }
-
-        public ActionResult Blog()
-        {
-            return View("Blog");
-        }
-
 
         [HttpPost]
         public JsonResult ContactMe(ContactMeViewModel viewModel)
@@ -75,55 +63,6 @@ namespace TestCloud.Controllers
             };
 
             emailSender.SendMail(emailConfiguration, emailContent);
-        }
-
-        private void SetIdioma()
-        {
-            var cookies = Request.Cookies;
-            var defaultLang = "EN";
-
-            if (cookies["lang-web"] != null)
-            {
-                var value = cookies["lang-web"].Value;
-                defaultLang = value;
-            }
-
-            ViewBag.Localizer = GetLocalizer(defaultLang).Translations;
-        }
-
-        private Localizer GetLocalizer(string lang)
-        {
-            var result = new Localizer();
-
-            var langFile = string.Empty;
-
-            switch (lang)
-            {
-                case "ES":
-                    langFile = "~/Resources/lang/es.json";
-                    break;
-                case "EN":
-                    langFile = "~/Resources/lang/en.json";
-                    break;
-            }
-
-            result.Translations = ReadLangFile(langFile);
-
-            return result;
-        }
-
-        private IDictionary<string, string> ReadLangFile(string path)
-        {
-            var mappedPath = Server.MapPath(path);
-
-            var json = FileReaderHelper.Read(mappedPath);
-
-            var values = JsonConvert.DeserializeObject<List<LanguageKey>>(json);
-
-            var dictionary = values
-                .ToDictionary(x => x.Key, x => x.Value);
-
-            return dictionary;
         }
     }
 }

@@ -14,10 +14,11 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 mr-auto intro-text" data-aos="fade-up">
                     <div class="slide-text">
-                        <h1 class="h1-title mb-5">@userLocalizer.GetTranslationByKey("tituloinicio")</h1>
+                        <h1 class="h1-title">@userLocalizer.GetTranslationByKey("tituloinicio")</h1>
+                        <h1 class="h1-title mb-5">@userLocalizer.GetTranslationByKey("subtituloinicio")</h1>
                         <p>@userLocalizer.GetTranslationByKey("descripcioninicio")</p>
                         <div class="text-center">
-                            <a href="/Home/Portfolio" class="btn btn-lore">@userLocalizer.GetTranslationByKey("descripcionbtninicio")</a>
+                            <a target="_blank" href="https://calendly.com/lorena-chaffer" class="btn btn-lore">@userLocalizer.GetTranslationByKey("descripcionbtninicio")</a>
                         </div>
                     </div>
                 </div>
@@ -39,33 +40,36 @@
             </div>
 
             <div class="col-xl-6 col-md-12 mb-3">
-                <div class="service" data-aos="flip-left">
-                    <span class="custom-icon-wrap"><span class="flaticon-glasses"></span></span>
-                    <h3>@userLocalizer.GetTranslationByKey("tituloservicio1")</h3>
+                <div class="service text-center" data-aos="flip-left">
+                    <span class="custom-icon-wrap"><span class="flaticon-responsive-design"></span></span>
+                    <h3><strong>@userLocalizer.GetTranslationByKey("tituloservicio1")</strong></h3>
                     <p>@userLocalizer.GetTranslationByKey("descripcionservicio1")</p>
+                    <p>@userLocalizer.GetTranslationByKey("descripcion2servicio1")</p>
+                    <p>@userLocalizer.GetTranslationByKey("descripcion3servicio1")</p>
+                    <p>@userLocalizer.GetTranslationByKey("descripcion4servicio1")</p>
+                    <strong class="letsdoit">@userLocalizer.GetTranslationByKey("descripcion5servicio1")</strong>
+                    <div class="offset-md-1 col-md-10  mt-3">
+                        <a target="_blank" href="https://calendly.com/lorena-chaffer" class="btn btn-lore btn-block">@userLocalizer.GetTranslationByKey("btncallme")</a>
+                    </div>
                 </div>
             </div>
 
             <div class="col-xl-6 col-md-12 mb-3">
-                <div class="service" data-aos="flip-left" data-aos-delay="100">
-                    <span class="custom-icon-wrap"><span class="flaticon-monitor"></span></span>
-                    <h3>@userLocalizer.GetTranslationByKey("tituloservicio2")</h3>
+                <div class="service text-center" data-aos="flip-left" data-aos-delay="100">
+                    <span class="custom-icon-wrap"><span class="flaticon-magic-wand"></span></span>
+                    <h3><strong>@userLocalizer.GetTranslationByKey("tituloservicio2")</strong></h3>
                     <p>@userLocalizer.GetTranslationByKey("descripcionservicio2")</p>
-                </div>
-            </div>
-
-            <div class="col-md-12 mt-3">
-                <div class="offset-md-4 col-md-4 offset-md-4">
-                    <button href="#" class="btn btn-lore btn-block">@userLocalizer.GetTranslationByKey("btncallme")</button>
+                    <p>@userLocalizer.GetTranslationByKey("descripcion2servicio2")</p>
+                    <p>@userLocalizer.GetTranslationByKey("descripcion3servicio2")</p>
+                    <p>@userLocalizer.GetTranslationByKey("descripcion4servicio2")</p>
+                    <strong class="letsdoit">@userLocalizer.GetTranslationByKey("descripcion5servicio2")</strong>
+                    <div class="offset-md-1 col-md-10  mt-3">
+                        <a target="_blank" href="https://calendly.com/lorena-chaffer" class="btn btn-lore btn-block">@userLocalizer.GetTranslationByKey("btncallme")</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="linea-divisoria"></div>
-
-    @Html.Partial("~/Views/Home/Partials/_portfolio.cshtml")
 
     <div class="linea-divisoria"></div>
 
@@ -82,63 +86,49 @@
                 <div>
                     <div class="testimonial">
                         <figure class="mb-4 d-block align-items-center justify-content-center">
-                            <div><img src="/Content/Images/sq_img_2.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+                            <div><img src="/Content/Images/testimonials/chioma.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
                         </figure>
                         <blockquote class="mb-3">
-                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                            <p>&ldquo;Working with Lorena as my VA and Social Media Manager has been one of the most rewarding and seamless experiences. It's as if she gets me, knows what I want so there has been no back and forth with her. I'm particularly impressed by her amazing creativity! I cannot recommend her enough. You will absolutely love her.&rdquo;</p>
                         </blockquote>
-                        <p class="text-black"><strong>John Smith</strong></p>
-
-
+                        <p class="text-black"><strong>CHIOMA - Strengths Empowerment Coach</strong></p>
                     </div>
                 </div>
                 <div>
                     <div class="testimonial">
-
                         <figure class="mb-4 d-block align-items-center justify-content-center">
-                            <div><img src="/Content/Images/sq_img_2.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+                            <div><img src="/Content/Images/testimonials/daria.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
                         </figure>
-
                         <blockquote class="mb-3">
-                            <p>&ldquo;Lorena es una mierda&rdquo;</p>
+                            <p>&ldquo;Lorena is amazing at what she does! She's a pro at editing and repurposing for our video and photo content. She follows instructions and always delivers a great job on time. Also, She's really responsible and hard working which I appreciate a lot!&rdquo;</p>
                         </blockquote>
-
-                        <p class="text-black"><strong>Robert Aguilar</strong></p>
-
-
+                        <p class="text-black"><strong>DARIA - Business Coach</strong></p>
                     </div>
                 </div>
 
                 <div>
                     <div class="testimonial">
                         <figure class="mb-4 d-block align-items-center justify-content-center">
-                            <div><img src="/Content/Images/sq_img_2.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+                            <div><img src="/Content/Images/testimonials/victoria.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
                         </figure>
                         <blockquote class="mb-3">
-                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                            <p>&ldquo;Hi Lorena! I just wanted to say thank you so much for your amazing work with my videos! The editing is perfect and I'm so impressed at how you got to know and understand my brand and content so quickly. You've literally taken the biggest weight of my shoulders so I can concentrate on working with my clients. I love working with you- you're amazing! Thank you for everything&rdquo;</p>
                         </blockquote>
-                        <p class="text-black"><strong>Roger Spears</strong></p>
-
-
+                        <p class="text-black"><strong>Victoria - Money Mindset Coach</strong></p>
                     </div>
-
                 </div>
 
                 <div>
                     <div class="testimonial">
                         <figure class="mb-4 d-block align-items-center justify-content-center">
-                            <div><img src="/Content/Images/sq_img_2.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+                            <div><img src="/Content/Images/testimonials/shawanna.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
                         </figure>
                         <blockquote class="mb-3">
-                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                            <p>&ldquo;I’ve been working with Lorena since Last September and it has been BY FAR one of the BEST business decisions that I’ve made!! As an entrepreneur, I struggle with giving up control but love to work with creatives and Lorena is exactly that!! I have NEVER been disappointed with anything that she has done! She is passionate about my business and the success of it (which is rare these days) and is super efficient!! Her work is always neat, clean and exactly what I’m looking for. If ever I need changes, she quickly makes them! She studies, stays on top of algorithms and trends. I can’t say enough good things about this girl!! She’s nothing short of Amazing and you won’t regret working with her&rdquo;</p>
                         </blockquote>
-                        <p class="text-black"><strong>Kyle McDonald</strong></p>
-
-
+                        <p class="text-black"><strong>Shawanna of Pink Diamonds Beauté Co</strong></p>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>

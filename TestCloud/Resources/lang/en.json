@@ -25,15 +25,19 @@
   },
   {
     "Key": "tituloinicio",
-    "Value": "We Do Awesome Things"
+    "Value": "Hey there,"
+  },
+  {
+    "Key": "subtituloinicio",
+    "Value": "I'm Lorena"
   },
   {
     "Key": "descripcioninicio",
-    "Value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus."
+    "Value": "I help people from all around the world to create meaningful content on social media and have a brand that really reflects their personallity. I am a multi-passionate person and I love breing creative, that's why my services are full of different valuable skills. If you are ready to take your business to the next level, click here:"
   },
   {
     "Key": "descripcionbtninicio",
-    "Value": "My portfolio"
+    "Value": "Book a call"
   },
   {
     "Key": "servicios",
@@ -41,23 +45,55 @@
   },
   {
     "Key": "tituloservicio1",
-    "Value": "Branding Design"
+    "Value": "Web Design"
   },
   {
     "Key": "descripcionservicio1",
-    "Value": "Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi."
+    "Value": "- Personalized branding"
+  },
+  {
+    "Key": "descripcion2servicio1",
+    "Value": "- Website build from scratch"
+  },
+  {
+    "Key": "descripcion3servicio1",
+    "Value": "- Payment plans"
+  },
+  {
+    "Key": "descripcion4servicio1",
+    "Value": "- About, services, testimonials, portfolio, contact and more"
+  },
+  {
+    "Key": "descripcion5servicio1",
+    "Value": "Let's create an amazing brand for you!"
   },
   {
     "Key": "tituloservicio2",
-    "Value": "WordPress Integration"
+    "Value": "The SM impact package"
   },
   {
     "Key": "descripcionservicio2",
-    "Value": "Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi."
+    "Value": "- 20 pieces of content per week (IG + FB)"
+  },
+  {
+    "Key": "descripcion2servicio2",
+    "Value": "- Video + photo editing"
+  },
+  {
+    "Key": "descripcion3servicio2",
+    "Value": "- Copywriting"
+  },
+  {
+    "Key": "descripcion4servicio2",
+    "Value": "- Scheduling and posting"
+  },
+  {
+    "Key": "descripcion5servicio2",
+    "Value": "Ready to make a huge impact with only fifteen mins per week?"
   },
   {
     "Key": "btncallme",
-    "Value": "Call me!"
+    "Value": "Call me"
   },
   {
     "Key": "descripcioncliente",
@@ -88,15 +124,15 @@
     "Value": "All"
   },
   {
-    "Key": "web",
-    "Value": "Web"
+    "Key": "photos",
+    "Value": "Photos"
   },
   {
-    "Key": "disenio",
-    "Value": "Design"
+    "Key": "graphics",
+    "Value": "Graphics"
   },
   {
-    "Key": "marca",
-    "Value": "Brand"
+    "Key": "thumbnails",
+    "Value": "Thumbnails"
   }
 ]
