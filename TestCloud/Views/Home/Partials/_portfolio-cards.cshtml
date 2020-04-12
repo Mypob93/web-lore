@@ -4,8 +4,10 @@
     var userLocalizer = ViewBag.Localizer as Dictionary<string, string>;
 }
 
+@model IEnumerable<PortfolioImage>
+
 <section class="site-section block__62272" id="next-section">
-    <div class="container" ng-controller="portfolioCardsController">
+    <div class="container">
         <div class="row portfolio-row justify-content-center mb-5" data-aos="fade-up">
             <div id="filters" class="filters text-center button-group col-md-7">
                 <button class="btn btn-lore-sm active all" data-filter="*">@userLocalizer.GetTranslationByKey("todo")</button>
@@ -18,11 +20,14 @@
         <div class="row portfolio-row">
             <div class="col-md-12">
                 <div id="posts" class="row no-gutter">
-                    <div ng-repeat="trabajo in Trabajos track by $index" class="item {{ trabajo.Section }} col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a class="fancybox" href="{{ trabajo.Image }}" rel="gallery1" data-fancybox-group="gallery">
-                            <img class="img-fluid" src="~/Content/Images/cosito.jpg" data-echo="{{ trabajo.Image }}">
-                        </a>
-                    </div>
+                    @foreach (var image in Model)
+                    {
+                        <div class="item @image.Section col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                            <a class="fancybox" href="@image.Src" rel="gallery1" data-fancybox-group="gallery">
+                                <img class="img-fluid" src="~/Content/Images/cosito.jpg" data-echo="@image.Src">
+                            </a>
+                        </div>
+                    }
                 </div>
             </div>
 

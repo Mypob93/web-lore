@@ -67,8 +67,8 @@ namespace TestCloud.EmailSender
             client.Credentials = new System.Net.NetworkCredential(
                                   emailConfig.ClientCredentialUserName,
                                   emailConfig.ClientCredentialPassword);
-            client.Host = m_HostName;
-            client.Port = 25;  // this is critical
+            //client.Host = m_HostName;
+            //client.Port = 25;  // this is critical
             client.EnableSsl = true;  // this is critical
 
             try

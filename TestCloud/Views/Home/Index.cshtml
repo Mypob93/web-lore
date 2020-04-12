@@ -40,7 +40,7 @@
             </div>
 
             <div class="col-xl-6 col-md-12 mb-3">
-                <div class="service text-center" data-aos="flip-left">
+                <div class="service text-center">
                     <span class="custom-icon-wrap"><span class="flaticon-responsive-design"></span></span>
                     <h3><strong>@userLocalizer.GetTranslationByKey("tituloservicio1")</strong></h3>
                     <p>@userLocalizer.GetTranslationByKey("descripcionservicio1")</p>
@@ -55,7 +55,7 @@
             </div>
 
             <div class="col-xl-6 col-md-12 mb-3">
-                <div class="service text-center" data-aos="flip-left" data-aos-delay="100">
+                <div class="service text-center">
                     <span class="custom-icon-wrap"><span class="flaticon-magic-wand"></span></span>
                     <h3><strong>@userLocalizer.GetTranslationByKey("tituloservicio2")</strong></h3>
                     <p>@userLocalizer.GetTranslationByKey("descripcionservicio2")</p>
@@ -74,12 +74,10 @@
     <div class="linea-divisoria"></div>
 
     <div id="testimonials-section">
-        <div data-aos="zoom-in" class="site-section testimonial-wrap">
-            <div class="container">
-                <div class="row mb-3">
-                    <div class="col-12 text-center">
-                        <h1 class="h1-title mb-3 mt-3">Testimonials</h1>
-                    </div>
+        <div data-aos="zoom-in" class="site-section testimonial-wrap container">
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <h1 class="h1-title mb-3 mt-3">Testimonials</h1>
                 </div>
             </div>
             <div class="slide-one-item home-slider owl-carousel">
@@ -91,7 +89,7 @@
                         <blockquote class="mb-3">
                             <p>&ldquo;Working with Lorena as my VA and Social Media Manager has been one of the most rewarding and seamless experiences. It's as if she gets me, knows what I want so there has been no back and forth with her. I'm particularly impressed by her amazing creativity! I cannot recommend her enough. You will absolutely love her.&rdquo;</p>
                         </blockquote>
-                        <p class="text-black"><strong>CHIOMA - Strengths Empowerment Coach</strong></p>
+                        <p class="text-black"><strong>CHIOMA ONYIUKE - Strengths Empowerment Coach</strong></p>
                     </div>
                 </div>
                 <div>
@@ -102,7 +100,7 @@
                         <blockquote class="mb-3">
                             <p>&ldquo;Lorena is amazing at what she does! She's a pro at editing and repurposing for our video and photo content. She follows instructions and always delivers a great job on time. Also, She's really responsible and hard working which I appreciate a lot!&rdquo;</p>
                         </blockquote>
-                        <p class="text-black"><strong>DARIA - Business Coach</strong></p>
+                        <p class="text-black"><strong>DARIA ZEST - Business Coach</strong></p>
                     </div>
                 </div>
 
@@ -114,7 +112,7 @@
                         <blockquote class="mb-3">
                             <p>&ldquo;Hi Lorena! I just wanted to say thank you so much for your amazing work with my videos! The editing is perfect and I'm so impressed at how you got to know and understand my brand and content so quickly. You've literally taken the biggest weight of my shoulders so I can concentrate on working with my clients. I love working with you- you're amazing! Thank you for everything&rdquo;</p>
                         </blockquote>
-                        <p class="text-black"><strong>Victoria - Money Mindset Coach</strong></p>
+                        <p class="text-black"><strong>VICTORIA MASKELL - Money Mindset Coach</strong></p>
                     </div>
                 </div>
 
@@ -124,9 +122,9 @@
                             <div><img src="/Content/Images/testimonials/shawanna.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
                         </figure>
                         <blockquote class="mb-3">
-                            <p>&ldquo;I’ve been working with Lorena since Last September and it has been BY FAR one of the BEST business decisions that I’ve made!! As an entrepreneur, I struggle with giving up control but love to work with creatives and Lorena is exactly that!! I have NEVER been disappointed with anything that she has done! She is passionate about my business and the success of it (which is rare these days) and is super efficient!! Her work is always neat, clean and exactly what I’m looking for. If ever I need changes, she quickly makes them! She studies, stays on top of algorithms and trends. I can’t say enough good things about this girl!! She’s nothing short of Amazing and you won’t regret working with her&rdquo;</p>
+                            <p>&ldquo;I’ve been working with Lorena since Last September and it has been BY FAR one of the BEST business decisions that I’ve made!!  I have NEVER been disappointed with anything that she has done! She is passionate about my business and the success of it (which is rare these days). She’s nothing short of Amazing and you won’t regret working with her&rdquo;</p>
                         </blockquote>
-                        <p class="text-black"><strong>Shawanna of Pink Diamonds Beauté Co</strong></p>
+                        <p class="text-black"><strong>SHAWANNA WATSON - Pink Diamonds Beauté Co</strong></p>
                     </div>
                 </div>
             </div>
@@ -136,4 +134,13 @@
     <div class="linea-divisoria"></div>
 
     @Html.Partial("~/Views/Home/Partials/_contactme.cshtml")
+
+
 </div>
+
+
+<script>
+    var urls = {
+        contactMeUrl: '@Url.Action("ContactMe", "Home")'
+    }
+</script>

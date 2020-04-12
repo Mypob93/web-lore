@@ -14,6 +14,7 @@
                     <div class="col-md-12">
                         @using (Html.BeginForm("ContactMe", "Home", FormMethod.Post, new { @id = "contactForm" }))
                         {
+                             @Html.AntiForgeryToken()
                             <fieldset class="contact-form">
                                 <div class="row">
                                     <div class="col-md-12 mb-3">

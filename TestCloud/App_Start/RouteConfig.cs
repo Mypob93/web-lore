@@ -20,6 +20,12 @@ namespace TestCloud
             );
 
             routes.MapRoute(
+                name: "Testing",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Home", action = "Testing", httpMethod = new HttpMethodConstraint("POST") }                
+            );
+
+            routes.MapRoute(
                 name: "Portfolio",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Portfolio", action = "Index", id = UrlParameter.Optional }

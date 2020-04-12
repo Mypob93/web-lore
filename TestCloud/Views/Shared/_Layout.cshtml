@@ -10,11 +10,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Lorena Chaffer">
-    <meta name="description" content="Virtual Assistant">
-
-    <!-- Title -->
-    <title>Lorena Chaffer</title>
+    <title>Lorena Chaffer | Virtual Assistant | Web Designer</title>
+    <meta name="description" content="Content creation and web design for coaches and entepreneurs." />
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Lorena Chaffer, Virtual Assistant, VA, Web Designer, Graphic Design" />
 
     <!-- Favicon -->
     <!-- ***** Start Stylesheet ***** -->
@@ -45,6 +44,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
 
     <!-- ***** End Stylesheet ***** -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163334991-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163334991-1');
+    </script>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar-lore" data-offset="300">
@@ -62,13 +71,13 @@
                             <a class="nav-link" data-redirect="#home-section" href="#">@userLocalizer.GetTranslationByKey("inicio")</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" data-redirect="#services-section" href="#">@userLocalizer.GetTranslationByKey("servicios")</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" data-redirect="/Portfolio" href="#">@userLocalizer.GetTranslationByKey("portfolio")</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-redirect="#testimonials-section" href="#">@userLocalizer.GetTranslationByKey("testimonios")</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-redirect="#aboutme" href="#">@userLocalizer.GetTranslationByKey("sobremi")</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-redirect="#contactme-section" href="#">@userLocalizer.GetTranslationByKey("contacto")</a>
@@ -82,7 +91,7 @@
                 <div class="">
                     <select class="selectpicker" data-width="fit">
                         <option data-content='<span class="flag-icon flag-icon-us"></span>' value="EN"></option>
-                        <option data-content='<span class="flag-icon flag-icon-es"></span>' value="ES"></option>
+                        @*<option data-content='<span class="flag-icon flag-icon-es"></span>' value="ES"></option>*@
                     </select>
                 </div>
             </nav>
@@ -92,8 +101,14 @@
     <div class="body-content" ng-app="myApp">
         @RenderBody()
     </div>
+    <div class="pre-footer">
+        <div class="container">
+            <div class="row p-3">
+            </div>
+        </div>
+    </div>
     <footer>
-        <center> 
+        <center>
             <div>
                 <div class="icons pt-1 pb-1">
                     <span><a href="http://www.facebook.com/lorenachaffer.va" target="_blank"><img src="~/Content/Images/icons/fb.png" alt="Image" class="facebook-icon"></a></span>
@@ -105,7 +120,7 @@
                         <span style="text-decoration:underline;"><a href="#"> Click here for privacy policy</a></span>
                     </span>
                 </div>
-            </div>        
+            </div>
         </center>
     </footer>
 </body>

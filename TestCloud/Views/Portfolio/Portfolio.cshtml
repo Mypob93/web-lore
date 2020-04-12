@@ -1,6 +1,10 @@
-﻿@{
+﻿@using TestCloud.Models;
+
+@{
     ViewBag.Title = "Home Page";
 }
+
+@model IEnumerable<PortfolioImage>
 
 <div id="overlayer">
     <div class="spinner"></div>
@@ -10,7 +14,7 @@
     <div class="container portfolio-container portfolio-row">
         <div class="row portfolio-row">
             <div class="col-md-12">
-                @Html.Partial("~/Views/Home/Partials/_portfolio-cards.cshtml")
+                @Html.Partial("~/Views/Home/Partials/_portfolio-cards.cshtml", Model)
             </div>
         </div>
     </div>

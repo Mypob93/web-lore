@@ -9,11 +9,18 @@ using TestCloud.Models;
 using System.IO;
 using TestCloud.Services;
 using Newtonsoft.Json;
+using Serilog;
+using Serilog.Core;
+using TestCloud.InternalLogger;
 
 namespace TestCloud.Controllers
 {
     public class BaseController : Controller
     {
+        public BaseController()
+        {
+        }
+
         protected void SetIdioma()
         {
             var cookies = Request.Cookies;

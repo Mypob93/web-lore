@@ -16,16 +16,26 @@ app.controller('contactController',["$scope", "$http", function ($scope, $http) 
     $scope.sendMail = function () {
         if ($scope.contactIsValid()) {
             addLoader();
-            $http.post("/Home/ContactMe", $scope.scopeToViewModel())
-                .then(function (response) {
+            let obj = {
+                viewModel: $scope.scopeToViewModel(),
+                __RequestVerificationToken: $scope.getToken()
+            };
+
+            $.ajax({
+                url: urls.contactMeUrl,
+                type: 'POST',
+                data: obj,
+                success: function (result) {
                     $('#contactForm')[0].reset();
                     removeLoader();
-                }, function (error)
-                    {
-                        console.log(error);
-                        removeLoader();
-                    });
+                },
+                error: error => removeLoader()
+            });
         }
+    }
+
+    $scope.getToken = function () {
+        return $('input[name="__RequestVerificationToken"]').val();
     }
 
     $scope.scopeToViewModel = function () {

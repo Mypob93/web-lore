@@ -19,7 +19,42 @@ namespace TestCloud.Controllers
         public ActionResult Index()
         {
             SetIdioma();
-            return View("Portfolio");
+            var portfolioItems = ReadJsonPortfolio();
+            return View("Portfolio", portfolioItems);
+        }
+
+        private IEnumerable<PortfolioImage> ReadJsonPortfolio()
+        {
+            var mappedPath = Server.MapPath("~/Content/Images/portfolio");
+            var result = new List<PortfolioImage>();
+
+            var photosPath = mappedPath + "/Photos";
+            var graphicsPath = mappedPath + "/Graphics";
+            var thumbnailsPath = mappedPath + "/Thumbnails";
+
+            try
+            {
+                result.AddRange(GetImagesModel(PortfolioEnum.Graphics, graphicsPath));
+                result.AddRange(GetImagesModel(PortfolioEnum.Photos, photosPath));
+                result.AddRange(GetImagesModel(PortfolioEnum.Thumbnails, thumbnailsPath));
+            }
+            catch (Exception)
+            {
+            }
+
+            return result;
+        }
+
+        private IEnumerable<PortfolioImage> GetImagesModel(PortfolioEnum type, string path)
+        {
+            var directoryInfo = new DirectoryInfo(path);
+            var files = directoryInfo.GetFiles();
+
+            var result = files?
+                .Select(x => new PortfolioImage { Src = $"/Content/Images/portfolio/{type.ToString()}/{x.Name}", Section = type.ToString() })
+                .ToList();
+
+            return result;
         }
     }
 }

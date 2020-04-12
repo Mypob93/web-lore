@@ -2,6 +2,8 @@ $(document).ready(() => {
     // carga los idiomas
     $('.selectpicker').selectpicker();
 
+    loadIgFeed();
+
     checkLangCookie();
 
     $("select").on("changed.bs.select",
@@ -109,4 +111,17 @@ var checkLangCookie = function () {
     if (lCookie != undefined) {
         $('.selectpicker').selectpicker('val', lCookie)
     }
+}
+
+function loadIgFeed() {
+    $.get('/Home/Feed', (data, status) => {
+        if (status === 'success') {
+            $.each(data, (i, value) => {
+                let html = "<figure class='col-lg-3 col-md-4 col-sm-6 col-12'>" +
+                    "<a target = '_blank' href = '" + value.Url + "'> <img src='" + value.Src+ "' alt='Image' class='img-fluid shadow'></a>" +
+                    "</figure>";
+                $('.pre-footer .container .row').append(html);
+            })
+        }
+    })
 }
