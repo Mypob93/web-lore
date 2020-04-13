@@ -300,6 +300,7 @@
     <Content Include="Resources\lang\es.json" />
     <Content Include="Resources\lang\en.json" />
     <Content Include="Resources\igfeed.json" />
+    <None Include="Properties\PublishProfiles\lorenachaffer.com - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery.fancybox.min.js" />
     <Content Include="Scripts\portfolio.js" />

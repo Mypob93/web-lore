@@ -259,3 +259,4 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/TestCloud/Properties/PublishProfiles/lorenachaffer.com - Web Deploy.pubxml
